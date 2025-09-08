@@ -4,13 +4,13 @@
 #include <string>
 using namespace std;
 
-// int call_count = 0; // global variable, :(
+ int call_count = 0; // global variable, :(
 
 // Finds all permutations of the given string where the first *pos* characters
 // are fixed (i.e. finds all permutations of characters in positions *pos* to
 // the end of the string).
 void permute (const string& str, size_t pos) {
-//	call_count++;
+	call_count++;
 
 	string s1 = str.substr(0, pos);		// fixed part
 	string s2 = str.substr(pos);		// variable part
@@ -36,5 +36,5 @@ int main () {
 	cout << "String: ";
 	cin >> s;
 	permute(s);
-//	cout << "Call count: " << call_count << endl;
+	cout << "Call count: " << call_count << endl;
 }
