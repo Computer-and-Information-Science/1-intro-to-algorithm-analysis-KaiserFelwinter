@@ -55,40 +55,40 @@
 
 - input/parameter impacting number of calls
   
-    Length of the input string
+    number of permutations
 
 - 3 specific examples of input/parameter and number of calls
   
-    Input:KA NOC:5
-    Input:GEO NOC:16
-    Input:KALON NOC:326
+    Input:2 NOC:5
+    Input:6 NOC:16
+    Input:24 NOC:65
 
 - number of recursive calls when input/parameter is *n*
   
-
+((n-1) *3)
 
 
 ## tower.cpp
 
 - input/parameter impacting number of calls
   
-    Number of disk
+    number of moves
 
 - 3 specific examples of input/parameter and number of calls
   
-    Input:3 NOC:15
-    Input:4 NOC:31
-    Input:2 NOC:7
+    Input:7 NOC:15
+    Input:15 NOC:31
+    Input:3 NOC:7
 
 - number of recursive calls when input/parameter is *n*
   
- Calls = (n * moves) + 1
+ Calls = (n*2)+1
 
 ## fibonacci2.cpp (presented in video lesson)
 
 - input/parameter impacting number of calls
   
-    How many numbers of the fibonacci sequence is wanted
+    amount of times needed to add
 
 - 3 specific examples of input/parameter and number of calls
   
@@ -98,3 +98,4 @@
 
 - number of recursive calls when input/parameter is *n*
    
+(n-1)

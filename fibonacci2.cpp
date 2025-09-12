@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 int call_count = 0;
-const unsigned int N = 10;
+const unsigned int N = 2;
 
 unsigned int fib (unsigned int n);
 
@@ -19,9 +19,10 @@ int main () {
 }
 
 unsigned int fib (unsigned int n) {
-	call_count++;
+	
 	static unsigned int results[N] = { 0 };
 	if (!results[n])
 		results[n] = n <= 1 ? 1 : fib(n - 1) + fib(n - 2);
+		call_count++;
 	return results[n];
 }
